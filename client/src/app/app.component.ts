@@ -26,6 +26,9 @@ export class AppComponent implements OnInit{
     if(user.token){
       this.accountService.setCurrentUser(user)
     }
+    else{
+      this.accountService.setCurrentUser(null!)
+    }
     
   }
 
