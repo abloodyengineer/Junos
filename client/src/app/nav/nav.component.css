@@ -5,3 +5,11 @@
 .nav-link, .navbar-brand{
     cursor: pointer;
 }
+
+
+img{
+    max-height: 50px;
+    display: inline;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}

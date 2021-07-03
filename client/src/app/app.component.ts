@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
 
   setCurrentUser(){
     const user:User=JSON.parse(localStorage.getItem('user') ||'{}')
-    if(user.token){
+    if(user?.token){
       this.accountService.setCurrentUser(user)
     }
     else{

@@ -23,6 +23,8 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { LoadingInterceptor } from './_interceptors/loading.interceptor';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { LoadingInterceptor } from './_interceptors/loading.interceptor';
     ListsComponent,
     MessagesComponent,
     MemberCardComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    PhotoEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { LoadingInterceptor } from './_interceptors/loading.interceptor';
     }),
     TabsModule.forRoot(),
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
