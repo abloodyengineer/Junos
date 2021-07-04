@@ -56,7 +56,7 @@
           <div class="btn-group" dropdown *ngIf="(accountService.currentUser$ | async) as user">
             <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
                     aria-controls="dropdown-basic">
-            <img src="{{user.photoUrl}}" alt="{{user.username}}">
+            <img src="{{user.photoUrl || './assets/user.png'}}" alt="{{user.username}}">
               Welcome {{user.username | titlecase}} <span class="caret"></span>
             </button>
             <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu mt-1"
