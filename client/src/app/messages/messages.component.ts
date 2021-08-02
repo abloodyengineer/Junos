@@ -18,9 +18,13 @@ export class MessagesComponent implements OnInit {
 
   loadMessages(event){
     console.log(event)
+    
     this.messageService.getMessages(event).subscribe(response=>{
       console.log(response.body)
       this.messages=response.body;
+      console.log(this.messages)
+      console.log(event)
+      this.container=event
        
     })
   }
