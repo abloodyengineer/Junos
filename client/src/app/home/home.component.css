@@ -1,0 +1,58 @@
+.home{
+    background-image: url("../../assets/pexels-josh-willink-58572.jpg");
+    /* background-color: #cccccc; */
+    /* opacity: 50%; */
+    background-size: 100% 100%;
+
+    /* background-blend-mode:soft-light; */
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    
+}
+
+
+.trans{
+    -webkit-animation: animate 5s ease-in;  
+    animation: animate 5s infinite;
+}
+@-webkit-keyframes animate {
+    0% { color: #30a69a; }
+    50% { color: #a9c7bc; }
+    100% { color: #30a69a; }
+    
+}
+  
+@keyframes animate {
+    0% { color: #30a69a; }
+    50% { color: #a9c7bc; }
+    100% { color: #30a69a; }
+        
+}
+
+.rev-trans{
+    -webkit-animation: revanimate 5s ease-in;  
+    animation: revanimate 5s infinite;
+}
+@-webkit-keyframes revanimate {
+    0% { color: #a9c7bc; }
+    50% { color: #30a69a; }
+    100% { color: #a9c7bc; }
+    
+}
+  
+@keyframes revanimate {
+    0% { color: #a9c7bc; }
+    50% { color: #30a69a; }
+    100% { color: #a9c7bc; }
+        
+}
+
+/* .textbg{
+    background-image: url("../../assets/backgd.jfif");
+    background-size: contain;
+} */

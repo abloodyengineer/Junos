@@ -1,18 +1,26 @@
-<div class="container mt-5">
-    <div *ngIf="!registerMode" style='text-align: center;'>
-        <h1>Find your match</h1>
-        <p class="lead">Sign up to get started...</p>
-        <div class="text-center">
-            <button (click)="registerToggle()" class="btn btn-primary btn-lg" style="margin-right: 3px;">Register </button>
-            <button class="btn btn-outline-primary btn-lg" style="margin-left: 3px;">Learn More </button>
+<div class="home">
+    <div *ngIf="!(accountService.currentUser$ | async)" class="container " style="margin-top: 100px;position: relative;">
+        <div *ngIf="!registerMode" style='text-align: center;' >
+            <h1 style="color:#30a69a;display:inline-block; font-family: 'Brush Script MT', cursive;" class="trans">Find your match</h1>
+            <!-- #34ebc0 -->
+            <p style="color:#77f2bd; font-family: 'Brush Script MT', cursive;" class="lead rev-trans">Sign up to get started...</p>
+            <div class="text-center">
+                <button (click)="registerToggle()" class="btn btn-primary btn-lg" style="margin-right: 3px;">Register </button>
+                <button class="btn btn-outline-primary btn-lg" style="margin-left: 3px;">Learn More </button>
+            </div>
         </div>
-    </div>
-
-    <div *ngIf="registerMode" class="container">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+    
+        <div *ngIf="registerMode" class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+                </div>
             </div>
         </div>
     </div>
+    
+</div>
+
+<div *ngIf="(accountService.currentUser$ | async)">
+
 </div>
