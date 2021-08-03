@@ -1,12 +1,13 @@
 <div class="row">
     <div class="col-lg-2" *ngFor="let member of members$ | async" >
-        <div *ngIf="member.knownAs !=(accountService.currentUser$ | async).knownAs">
+        <!-- <div *ngIf="member.knownAs !=(accountService.currentUser$ | async).knownAs">
             <app-member-card  [member]='member'></app-member-card>
         </div>
         <div *ngIf="member.knownAs ==(accountService.currentUser$ | async).knownAs">
             <app-member-card  [member]='dummyUser'></app-member-card>
-        </div>
+        </div> -->
+            <app-member-card  [member]='member'></app-member-card>
+
     </div>
 
 </div>
-{{(accountService.currentUser$ | async).knownAs}}
