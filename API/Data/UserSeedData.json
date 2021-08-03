@@ -188,5 +188,24 @@
             "IsMain": true
         }
         ]
+    },
+    {
+      "UserName": "DummyUser",
+      "Gender": "male",
+      "DateOfBirth": "1951-09-03",
+      "KnownAs": "DummyUser",
+      "Created": "2019-12-11",
+      "LastActive": "2020-05-03",
+      "Introduction": "Nostrud ipsum fugiat id culpa id id officia in quis fugiat sunt sit in aliqua. Commodo nisi quis exercitation tempor magna deserunt. Mollit ipsum veniam sint Lorem exercitation veniam ad culpa minim tempor qui fugiat. Consectetur voluptate ipsum ex sit cupidatat aliquip exercitation velit. Aute amet cillum Lorem culpa irure mollit occaecat qui reprehenderit ex velit Lorem incididunt cillum.\r\n",
+      "LookingFor": "Sit pariatur reprehenderit duis et id officia Lorem cupidatat occaecat sint eiusmod culpa. Aute ut esse magna laboris anim consectetur ea enim et enim nisi reprehenderit Lorem. Incididunt elit anim velit ea ullamco commodo ex consequat aliqua id sit dolor esse. Non reprehenderit sit cillum Lorem consectetur ullamco ullamco exercitation culpa nulla.\r\n",
+      "Interests": "Deserunt adipisicing commodo qui mollit tempor et et irure cupidatat id.",
+      "City": "DummyCity",
+      "Country": "DummyCountry",
+      "Photos": [
+        {
+          "Url": "https://randomuser.me/api/portraits/men/7.jpg",
+          "IsMain": true
+        }
+      ]
     }
   ]
